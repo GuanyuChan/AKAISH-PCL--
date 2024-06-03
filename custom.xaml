@@ -1,0 +1,91 @@
+<local:MyCard Title="你好" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="你这么积极玩吗？" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="17"
+                    Text="好吧，就是会卡你电脑（确信）" />
+        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721" FontSize="17"
+                    Text="不过，欢迎。" />
+        
+
+
+        <TextBlock TextWrapping="Wrap" Margin="10,10,10,10" Foreground="#114514" FontSize="30"
+                    Text="欢迎使用Akaish主页！！！！QWQ" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="#092718"
+                    Text="（这个名字是作者随便想的（笑））" />
+	</StackPanel>
+</local:MyCard>
+<local:MyCard Title="野生提示" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+	<StackPanel Margin="25,40,23,15">
+		<local:MyHint Text="MCBBS寄了，最近打不开属正常。就此我们能知道，最近MC不稳定..." />
+		<local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="MC出1.20.5了啊啊啊啊啊啊啊" />
+		<local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="MC最新正式版：1.20.5。" />
+                <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="请随时去Github仓库观察是否有主页更新。" />
+		<local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="具体一些小新闻请去更改新闻主页再看。" />
+		<local:MyHint Margin="0,10,0,2" IsWarn="False"
+		    Text="Aka 听说新闻主页倒闭了LMAO。"/>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="新闻会随着Github仓库更新而更新" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="实用工具" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+        <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="这里整入了一些常用链接（排版奇葩）" />
+		<local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="15,0,15,0"
+                    Text="原版Fabric安装" EventType="打开网页" EventData="https://fabricmc.net/" />
+                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="安慕希官网" EventType="打开网页" EventData="https://www.minecraft.net/" />
+		<local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="MCBBS官网" EventType="弹出窗口" EventData="他妈的都噶了你还想啥？|都寄了。\n你还期望能打开？！（悲）。" />
+                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="小破皮肤站(Little Skin)" EventType="打开网页" EventData="https://littleskin.cn/" />
+                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="原版Forge安装" EventType="打开网页" EventData="https://files.minecraftforge.net/net/minecraftforge/forge/" />
+                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="MC官网设置" EventType="打开网页" EventData="https://www.minecraft.net/zh-hans/msaprofile/mygames/editprofile" />
+                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="安慕希百科（MC百科）" EventType="打开网页" EventData="https://www.mcmod.cn/" />
+                <local:MyButton Width="230" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="安慕希百科全书（Minecraft Wiki)" EventType="打开网页" EventData="https://zh.minecraft.wiki/" />
+                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="MTRBBS" EventType="打开网页" EventData="https://www.mtrbbs.top/" />
+                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="MineWiki" EventType="打开网页" EventData="https://minewiki.net/%E9%A6%96%E9%A1%B5" />
+
+	</StackPanel>
+</local:MyCard>
+
+
+<local:MyCard Title="关于主页" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="30,30,30,30" Foreground="#8C7721" FontSize="20"
+                    Text="Hugo CG" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="17"
+                    Text="一个会一点代码的铁路迷" />
+                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="个人B站" EventType="打开网页" EventData="https://space.bilibili.com/3546588051933514" />
+                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="个人MTRBBS主页" EventType="打开网页" EventData="https://www.mtrbbs.top/?6386" />
+		
+
+		<local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="Github仓库" EventType="弹出窗口" EventData="Github|修建中。\n请等待后续拆分更新。" />
+		
+
+
+		<local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="爱发电" EventType="弹出窗口" EventData="爱发电|AKA修建中。\n请等待后续更新。\n(可以想想赞助我多少钱了（😀））" />
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="产品名：Akaish 主页" />
+		<local:MyHint Text="这个代码是这个作者自己敲的，请不要自称本作品是你的!" />
+		<local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="版本：内测V1.0" />
+		<local:MyHint Text="版本号：00114514" />
+	</StackPanel>
+</local:MyCard>
