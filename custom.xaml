@@ -1,91 +1,185 @@
+
 <local:MyCard Title="你好" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
 	<StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-                    Text="你这么积极玩吗？" />
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="17"
-                    Text="好吧，就是会卡你电脑（确信）" />
-        <TextBlock TextWrapping="Wrap" Margin="20,5,20,0" Foreground="#8C7721" FontSize="17"
-                    Text="不过，欢迎。" />
-        
-
-
         <TextBlock TextWrapping="Wrap" Margin="10,10,10,10" Foreground="#114514" FontSize="30"
                     Text="欢迎使用Akaish主页！！！！QWQ" />
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="#092718"
                     Text="（这个名字是作者随便想的（笑））" />
 	</StackPanel>
 </local:MyCard>
-<local:MyCard Title="野生提示" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+<local:MyCard Title="各种新闻" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
 	<StackPanel Margin="25,40,23,15">
-		<local:MyHint Text="MCBBS寄了，最近打不开属正常。就此我们能知道，最近MC不稳定..." />
 		<local:MyHint Margin="0,8,0,2" IsWarn="False"
-                    Text="MC出1.20.5了啊啊啊啊啊啊啊" />
+                    Text="MC Wiki 迁移了~" />
+        <local:MyButton Width="200" Height="40" HorizontalAlignment="Center" Padding="15,0,15,0"
+                    Text="具体可看这个" EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki:%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5" />
 		<local:MyHint Margin="0,8,0,2" IsWarn="False"
-                    Text="MC最新正式版：1.20.5。" />
+                    Text="MC最新正式版：1.20.6。(我只是在这里以Github仓库更新而重新更新，肯定会有延迟)" />
                 <local:MyHint Margin="0,8,0,2" IsWarn="False"
                     Text="请随时去Github仓库观察是否有主页更新。" />
-		<local:MyHint Margin="0,8,0,2" IsWarn="False"
-                    Text="具体一些小新闻请去更改新闻主页再看。" />
-		<local:MyHint Margin="0,10,0,2" IsWarn="False"
-		    Text="Aka 听说新闻主页倒闭了LMAO。"/>
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
                     Text="新闻会随着Github仓库更新而更新" />
+    <local:MyListItem  Margin="-2,0,0,0"
+		Logo="https://pic1.afdiancdn.com/user/82ebba4020bb11eb9a0a52540025c377/avatar/68ed7625fb47e2c8c911ddfbf618570b_w639_h640_s33.jpeg?imageView2/1/w/240/h/240" Title="访问更多新闻" Info="可以在此链接访问Minecraft新闻（By:Light Beacon)"
+		EventType="打开帮助" EventData="https://news.bugjump.net/News.json" Type="Clickable" />
 	</StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="实用工具" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+<local:MyCard Title="实用工具" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
         <StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
-                    Text="这里整入了一些常用链接（排版奇葩）" />
-		<local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="15,0,15,0"
-                    Text="原版Fabric安装" EventType="打开网页" EventData="https://fabricmc.net/" />
-                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="安慕希官网" EventType="打开网页" EventData="https://www.minecraft.net/" />
-		<local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="MCBBS官网" EventType="弹出窗口" EventData="他妈的都噶了你还想啥？|都寄了。\n你还期望能打开？！（悲）。" />
-                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="小破皮肤站(Little Skin)" EventType="打开网页" EventData="https://littleskin.cn/" />
-                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="原版Forge安装" EventType="打开网页" EventData="https://files.minecraftforge.net/net/minecraftforge/forge/" />
-                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="MC官网设置" EventType="打开网页" EventData="https://www.minecraft.net/zh-hans/msaprofile/mygames/editprofile" />
-                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="安慕希百科（MC百科）" EventType="打开网页" EventData="https://www.mcmod.cn/" />
-                <local:MyButton Width="230" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="安慕希百科全书（Minecraft Wiki)" EventType="打开网页" EventData="https://zh.minecraft.wiki/" />
-                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="MTRBBS" EventType="打开网页" EventData="https://www.mtrbbs.top/" />
-                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="MineWiki" EventType="打开网页" EventData="https://minewiki.net/%E9%A6%96%E9%A1%B5" />
+        <local:MyCard Title="快速访问网站" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+            <StackPanel Margin="25,40,23,15">
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="这里整入了一些常用链接" />
+            <local:MyListItem  Margin="-2,0,0,0"
+		        Logo="https://www.fabricmc.net/assets/logo.png" Title="原版Fabric安装" Info="The Fabric Toolchain home"
+		        EventType="打开网页" EventData="https://www.fabricmc.net/" Type="Clickable" />
+            <local:MyListItem  Margin="-2,0,0,0"
+		        Logo="https://icon-library.com/images/minecraft-logo-icon/minecraft-logo-icon-6.jpg" Title="安慕希官网" Info="玩正版，从你我做起"
+		        EventType="打开网页" EventData="https://www.minecraft.net/" Type="Clickable" />
+            <local:MyListItem  Margin="-2,0,0,0"
+		        Logo="" Title="Little Skin" Info="Authlib-Injector 托管！！！"
+		        EventType="打开网页" EventData="https://littleskin.cn/" Type="Clickable" />
+            <local:MyListItem  Margin="-2,0,0,0"
+		        Logo="https://files.minecraftforge.net/favicon.ico" Title="Forge" Info="Forge Mod Loader"
+		        EventType="打开网页" EventData="https://files.minecraftforge.net/net/minecraftforge/forge/" Type="Clickable" />
+            <local:MyListItem  Margin="-2,0,0,0"
+		        Logo="" Title="MC 设置" Info="快速引导你去MC设置"
+		        EventType="打开网页" EventData="https://files.minecraftforge.net/net/minecraftforge/forge/" Type="Clickable" />
+            <local:MyListItem  Margin="-2,0,0,0"
+		        Logo= "https://www.mcmod.cn/favicon.ico" Title="安慕希百科" Info="（MC百科）各种模组和材质包的大型汇总库！"
+		        EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" />
+            <local:MyListItem  Margin="-2,0,0,0"
+		        Logo= "https://zh.minecraft.wiki/favicon.ico" Title="安慕希百科全书（Minecraft Wiki)" Info="类似于维基百科，可以自由编辑和翻阅的我的世界有关百科全书！"
+		        EventType="打开网页" EventData="https://zh.minecraft.wiki/" Type="Clickable" />
+            <local:MyListItem  Margin="-2,0,0,0"
+		        Logo= "https://www.mtrbbs.top/favicon.ico" Title="MTRBBS" Info="我的世界铁路模组（MTR)官方论坛"
+		        EventType="打开网页" EventData="https://www.mtrbbs.top/" Type="Clickable" />
+            <local:MyListItem  Margin="-2,0,0,0"
+		        Logo= "https://zh.wikipedia.org/favicon.ico" Title="Wikipideia记载的我的世界Wiki" Info="似乎没啥大用"
+		        EventType="打开网页" EventData="https://zh.wikipedia.org/wiki/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C" Type="Clickable" />
+                           </StackPanel>
+            </local:MyCard>
+        <local:MyCard Title="小工具" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+        Text="这些功能均为PCL自带，如有差错请向PCL反馈" />
+    <local:MyButton Grid.Column="0" Height="35" Margin="0,0,10,5"
+        Text="刷新主页" EventType="刷新主页"/>
+    <local:MyButton Grid.Column="0" Height="35" Margin="0,0,10,5"
+        Text="今日人品" EventType="今日人品"/>
+    <local:MyButton Grid.Column="1" Height="35" Margin="0,0,10,5"
+        Text="内存优化" EventType="内存优化"/>
+    <local:MyButton Grid.Column="2" Height="35" Margin="0,0,10,5"
+        Text="清理垃圾" EventType="清理垃圾"/>
 
+            </StackPanel>
+</local:MyCard>
+<local:MyCard Title="PCL下传工具" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+	<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="21" Foreground="{DynamicResource ColorBrush2}"
+				Text="PCL 2 自带下载工具"/>
+	<local:MyHint Margin="0,0,0,10" IsWarn="False" Text="使用 PCL 的高速多线程下载引擎下载任意文件。请注意，部分网站（例如百度网盘）可能会报错(403)已禁止，无法正常下载。"/>
+	<local:MyHint Margin="0,0,0,10" IsWarn="False" Text="一定要以http://或https://开头的网址，部分网址下不了" />
+    <local:MyHint Margin="0,0,0,10" IsWarn="True" Text="一定不要按回车（Enter)!这直接会启动游戏（你是来下载还是干嘛？！）" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <local:MyTextBox Margin="0,0,0,0" HintText="下传网址：" Name="web" Height="30" Grid.Column="0" ToolTip="在栏中输入你需要下载的文件原链接（网址）。"/>
+            <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}" Text="下传" Margin="5,0,0,0" Height="30" Grid.Column="2" Padding="2,0,2,0" ColorType="Highlight"/>
+        </Grid>
+				<StackPanel Margin="0,0,0,15"/>
+                <Grid Margin="0,7,0,15">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+                <ColumnDefinition Width="100">
+                </ColumnDefinition>
+                <ColumnDefinition Width="1*">
+                </ColumnDefinition>
+              </Grid.ColumnDefinitions>
+      <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="0" />
+              <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
+      </Grid>
+              <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" /> 
+                                    <ColumnDefinition Width="1*" /> 
+                                </Grid.ColumnDefinitions>
+          </Grid>
 	</StackPanel>
 </local:MyCard>
-
+    <local:MyCard Title="搜索导航栏"  Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+			<StackPanel Margin="24,40,24,15">
+				<local:MyListItem  Margin="-2,0,0,0"
+		            		Logo="https://www.bing.com/favicon.ico" Title="必应 - Bing" Info="微软自带的搜索引擎，还有Copilot!"
+		            		EventType="打开网页" EventData="https://www.bing.com/?cc=us" Type="Clickable" />
+				<local:MyListItem  Margin="-2,0,0,0"
+		            		Logo="https://www.google.com.hk/favicon.ico" Title="Google" Info="一定要用VPN啊啊啊"
+		            		EventType="打开网页" EventData="https://www.google.com.hk/" Type="Clickable" />
+				<local:MyListItem  Margin="-2,0,0,0"
+		            		Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道"
+		            		EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="15"
+                    Text="或者在下面输入自定义的网站" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+               <local:MyTextBox HintText="在这里输入你的网址：" Margin="0,0,0,10" Name="site" Height="30" Grid.Column="0" ToolTip="在此输入链接打开网页，注意以http:// 或 https://开头"/>
+               <local:MyButton EventType="打开网页" EventData="{Binding ElementName=site,Path=Text}" Text="打开选中的网址" Margin="5,0,0,10" Height="30" Grid.Column="1" Padding="2,0,2,0" ColorType="Highlight"/>
+            </Grid>
+        </StackPanel>
+		</local:MyCard>
+	</StackPanel>
+</local:MyCard>
 
 <local:MyCard Title="关于主页" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
 	<StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="30,30,30,30" Foreground="#8C7721" FontSize="20"
                     Text="Hugo CG" />
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="17"
-                    Text="一个会一点代码的铁路迷" />
-                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="个人B站" EventType="打开网页" EventData="https://space.bilibili.com/3546588051933514" />
-                <local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="个人MTRBBS主页" EventType="打开网页" EventData="https://www.mtrbbs.top/?6386" />
-		
-
-		<local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="Github仓库" EventType="弹出窗口" EventData="Github|修建中。\n请等待后续拆分更新。" />
-		
-
-
-		<local:MyButton Width="200" Height="40" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="爱发电" EventType="弹出窗口" EventData="爱发电|AKA修建中。\n请等待后续更新。\n(可以想想赞助我多少钱了（😀））" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="21"
+                    Text="一个会一点代码的铁路迷(我很菜的)" />
+            <local:MyListItem  Margin="-2,0,0,0"
+		        Logo="https://www.bilibili.com/favicon.ico" Title="个人B站" Info="不嫌的话我才不到300个粉丝啊啊啊啊"
+		        EventType="打开网页" EventData="https://space.bilibili.com/3546588051933514" Type="Clickable" />
+            <local:MyListItem  Margin="-2,0,0,0"
+		        Logo="https://www.mtrbbs.top/favicon.ico" Title="个人MTRBBS" Info="我的世界铁路论坛的个人账户"
+		        EventType="打开网页" EventData="https://www.mtrbbs.top/?6386" Type="Clickable" />    
+            <local:MyListItem  Margin="-2,0,0,0"
+		        Logo="https://logowik.com/content/uploads/images/github9775.jpg" Title="主页代码仓库（Github)" Info="主页仓库代码已开源"
+		        EventType="打开网页" EventData="https://github.com/GuanyuChan/AKAISH-PCL--" Type="Clickable" />    
         <local:MyHint Margin="0,8,0,2" IsWarn="False"
                     Text="产品名：Akaish 主页" />
 		<local:MyHint Text="这个代码是这个作者自己敲的，请不要自称本作品是你的!" />
 		<local:MyHint Margin="0,8,0,2" IsWarn="False"
-                    Text="版本：内测V1.0" />
-		<local:MyHint Text="版本号：00114514" />
-	</StackPanel>
-</local:MyCard>
+                    Text="版本：V1.2" />
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+            Text="部分代码基于Ad_closeNN制作的PCL主页" />
+        <local:MyTextButton Margin="0" Text="打开他的Github仓库" EventType="打开网页" EventData="https://github.com/Ad-closeNN/PCL2-home-page" ToolTip="点击" />
+        <local:MyButton Padding="13,10,13,10" ColorType="Red" Text="或者在这里切换至他的主页（谨慎选择）" EventType="打开帮助" EventData="https://ad-closenn.github.io/aft/Custom.json"/>
+    <TextBlock> 
+      无特殊声明本主页采用 <local:MyTextButton Margin="0,0,0,-2" Text="CC BY-NC-SA 4.0" EventType="打开网页" EventData="https://creativecommons.org/licenses/by-nc-sa/4.0/ " ToolTip="点击打开Creative Commoons CC" /> 授权。
+      <LineBreak /></TextBlock>
+
+
+
+
+
+
+
+              <TextBlock Text="下 面 没 东 西 啦" HorizontalAlignment="Center" FontSize="16" Foreground="{DynamicResource ColorBrush2}" Grid.Column="1" VerticalAlignment="Center" />
+              <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
+
+		</StackPanel>
+		</local:MyCard>
+
+
+
+
+
+
