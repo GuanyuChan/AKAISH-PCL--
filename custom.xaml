@@ -10,11 +10,7 @@
 <local:MyCard Title="各种新闻" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
 	<StackPanel Margin="25,40,23,15">
 		<local:MyHint Margin="0,8,0,2" IsWarn="False"
-                    Text="MC Wiki 迁移了~" />
-        <local:MyButton Width="200" Height="40" HorizontalAlignment="Center" Padding="15,0,15,0"
-                    Text="具体可看这个" EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Minecraft_Wiki:%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5" />
-		<local:MyHint Margin="0,8,0,2" IsWarn="False"
-                    Text="MC最新正式版：1.20.6。(我只是在这里以Github仓库更新而重新更新，肯定会有延迟)" />
+                    Text="MC最新正式版：1.21.4。(我只是在这里以Github仓库更新而重新更新，肯定会有延迟)" />
                 <local:MyHint Margin="0,8,0,2" IsWarn="False"
                     Text="请随时去Github仓库观察是否有主页更新。" />
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
@@ -58,6 +54,9 @@
             <local:MyListItem  Margin="-2,0,0,0"
 		        Logo= "https://zh.wikipedia.org/favicon.ico" Title="Wikipideia记载的我的世界Wiki" Info="似乎没啥大用"
 		        EventType="打开网页" EventData="https://zh.wikipedia.org/wiki/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C" Type="Clickable" />
+            <local:MyListItem  Margin="-2,0,0,0"
+		        Logo= "https://branditechture.agency/brand-logos/wp-content/uploads/wpdm-cache/CurseForge-900x0.png" Title="Curse Forge" Info="MC和其他游戏最大（？）的游戏模组托管商，说超过500K个模组(奇妙~)"
+		        EventType="打开网页" EventData="https://www.curseforge.com/" Type="Clickable" />
                            </StackPanel>
             </local:MyCard>
         <local:MyCard Title="小工具" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
@@ -72,6 +71,7 @@
         Text="内存优化" EventType="内存优化"/>
     <local:MyButton Grid.Column="2" Height="35" Margin="0,0,10,5"
         Text="清理垃圾" EventType="清理垃圾"/>
+
 
             </StackPanel>
 </local:MyCard>
@@ -131,7 +131,7 @@
                 <ColumnDefinition Width="1*" />
             </Grid.ColumnDefinitions>
                <local:MyTextBox HintText="在这里输入你的网址：" Margin="0,0,0,10" Name="site" Height="30" Grid.Column="0" ToolTip="在此输入链接打开网页，注意以http:// 或 https://开头"/>
-               <local:MyButton EventType="打开网页" EventData="{Binding ElementName=site,Path=Text}" Text="打开选中的网址" Margin="5,0,0,10" Height="30" Grid.Column="1" Padding="2,0,2,0" ColorType="Highlight"/>
+               <local:MyButton EventType="打开网页" EventData="{Binding ElementName=site,Path=Text}" Text="打开填写的网址" Margin="5,0,0,10" Height="30" Grid.Column="1" Padding="2,0,2,0" ColorType="Highlight"/>
             </Grid>
         </StackPanel>
 		</local:MyCard>
@@ -145,7 +145,7 @@
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="21"
                     Text="一个会一点代码的铁路迷(我很菜的)" />
             <local:MyListItem  Margin="-2,0,0,0"
-		        Logo="https://www.bilibili.com/favicon.ico" Title="个人B站" Info="不嫌的话我才不到300个粉丝啊啊啊啊"
+		        Logo="https://www.bilibili.com/favicon.ico" Title="个人B站" Info="坏了要破500了"
 		        EventType="打开网页" EventData="https://space.bilibili.com/3546588051933514" Type="Clickable" />
             <local:MyListItem  Margin="-2,0,0,0"
 		        Logo="https://www.mtrbbs.top/favicon.ico" Title="个人MTRBBS" Info="我的世界铁路论坛的个人账户"
@@ -157,15 +157,11 @@
                     Text="产品名：Akaish 主页" />
 		<local:MyHint Text="这个代码是这个作者自己敲的，请不要自称本作品是你的!" />
 		<local:MyHint Margin="0,8,0,2" IsWarn="False"
-                    Text="版本：V1.2" />
-        <local:MyHint Margin="0,8,0,2" IsWarn="False"
-            Text="部分代码基于Ad_closeNN制作的PCL主页" />
-        <local:MyTextButton Margin="0" Text="打开他的Github仓库" EventType="打开网页" EventData="https://github.com/Ad-closeNN/PCL2-home-page" ToolTip="点击" />
-        <local:MyButton Padding="13,10,13,10" ColorType="Red" Text="或者在这里切换至他的主页（谨慎选择）" EventType="打开帮助" EventData="https://ad-closenn.github.io/aft/Custom.json"/>
+                    Text="版本：V1.4" />
+        <local:MyButton Padding="13,10,13,10" ColorType="Red" Text="或者在这里切换至他的主页" EventType="打开帮助" EventData="https://ad-closenn.github.io/aft/Custom.json"/>
     <TextBlock> 
       无特殊声明本主页采用 <local:MyTextButton Margin="0,0,0,-2" Text="CC BY-NC-SA 4.0" EventType="打开网页" EventData="https://creativecommons.org/licenses/by-nc-sa/4.0/ " ToolTip="点击打开Creative Commoons CC" /> 授权。
       <LineBreak /></TextBlock>
-
 
 
 
