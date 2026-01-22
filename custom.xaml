@@ -1,20 +1,34 @@
 
-<local:MyCard Title="你好" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+<local:MyCard Title="你好" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
 	<StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="10,10,10,10" Foreground="#114514" FontSize="30"
                     Text="欢迎使用Akaish主页！！！！QWQ" />
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="#092718"
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="#114514"
                     Text="（这个名字是作者随便想的（笑））" />
 	</StackPanel>
 </local:MyCard>
 <local:MyCard Title="各种新闻" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
 	<StackPanel Margin="25,40,23,15">
 		<local:MyHint Margin="0,8,0,2" IsWarn="False"
-                    Text="MC最新正式版：1.21.10" />
+                    Text="MC最新正式版：1.21.11" />
                 <local:MyHint Margin="0,8,0,2" IsWarn="False"
                     Text="最新正式版的更新请随时访问Github仓库获取" />
+                <local:MyHint Margin="0,8,0,2" IsWarn="True"
+                    Text="在Mojang最新发布中，版本号系统从1.xx转变为年份.xx(例26.1)主页自新版本发布后将会替换为此编号系统" />
+                <local:MyHint Margin="0,8,0,2" IsWarn="True"
+                    Text="某些图片显示出错，正在整改" />
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+            Text="" />
+<Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+            Text="" />
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
                     Text="新闻会随着Github仓库而更新...吗？可能不会🤔" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+            Text="" />
+<Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+            Text="" />
     <local:MyListItem  Margin="-2,0,0,0"
 		Logo="https://pic1.afdiancdn.com/user/82ebba4020bb11eb9a0a52540025c377/avatar/68ed7625fb47e2c8c911ddfbf618570b_w639_h640_s33.jpeg?imageView2/1/w/240/h/240" Title="访问更多新闻" Info="可以在此链接访问Minecraft新闻（By:Light Beacon)"
 		EventType="打开帮助" EventData="https://news.bugjump.net/News.json" Type="Clickable" />
@@ -34,7 +48,7 @@
 		        Logo="https://icon-library.com/images/minecraft-logo-icon/minecraft-logo-icon-6.jpg" Title="安慕希官网" Info="玩正版，从你我做起"
 		        EventType="打开网页" EventData="https://www.minecraft.net/" Type="Clickable" />
             <local:MyListItem  Margin="-2,0,0,0"
-		        Logo="" Title="Little Skin" Info="Authlib-Injector 托管！！！"
+		        Logo="https://www.littleskin.cn/favicon.ico" Title="Little Skin" Info="Authlib-Injector 托管！！！"
 		        EventType="打开网页" EventData="https://littleskin.cn/" Type="Clickable" />
             <local:MyListItem  Margin="-2,0,0,0"
 		        Logo="https://files.minecraftforge.net/favicon.ico" Title="Forge" Info="Forge Mod Loader"
@@ -140,7 +154,7 @@
 
 <local:MyCard Title="关于主页" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
 	<StackPanel Margin="25,40,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="30,30,30,30" Foreground="#0fa6d8ff" FontSize="20"
+        <TextBlock TextWrapping="Wrap" Margin="30,30,30,30" Foreground="#ff028dff" FontSize="20"
                     Text="11A4008深" />
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="21"
                     Text="一个会一点代码的铁路迷(我很菜的)" />
@@ -153,20 +167,25 @@
             <local:MyListItem  Margin="-2,0,0,0"
 		        Logo="https://logowik.com/content/uploads/images/github9775.jpg" Title="主页代码仓库（Github)" Info="大概就是你升级新版本的通道吧"
 		        EventType="打开网页" EventData="https://github.com/GuanyuChan/AKAISH-PCL--" Type="Clickable" />    
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+            Text="" />
+<Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+            Text="" />
         <local:MyHint Margin="0,8,0,2" IsWarn="False"
                     Text="产品名：Akaish 主页" />
-		<local:MyHint Text="本代码在可开源的情况下转载，不过请标注原作者" />
+        <local:MyHint Margin="0,8,0,2" IsWarn="True"
+                    Text="本代码在可开源的情况下转载，不过请标注原作者" />
+
 		<local:MyHint Margin="0,8,0,2" IsWarn="False"
-                    Text="版本：V1.4" />
-    <TextBlock> 
-      无特殊声明本主页采用 <local:MyTextButton Margin="0,0,0,-2" Text="CC BY-NC-SA 4.0" EventType="打开网页" EventData="https://creativecommons.org/licenses/by-nc-sa/4.0/ " ToolTip="点击打开Creative Commoons CC" /> 授权。
-      <LineBreak /></TextBlock>
-
-
-
-
-
-
+                    Text="版本：V1.5" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+            Text="" />
+        <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+            Text="" />
+        <local:MyButton Grid.Column="0" Height="35" Margin="0,0,10,5"
+            Text="刷新主页" EventType="刷新主页"/>
               <TextBlock Text="下 面 没 东 西 啦" HorizontalAlignment="Center" FontSize="16" Foreground="{DynamicResource ColorBrush2}" Grid.Column="1" VerticalAlignment="Center" />
               <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
 
