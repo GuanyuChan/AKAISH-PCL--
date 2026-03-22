@@ -15,8 +15,6 @@
                     Text="最新正式版的更新请随时访问Github仓库获取" />
                 <local:MyHint Margin="0,8,0,2" IsWarn="True"
                     Text="在Mojang最新发布中，版本号系统从1.xx转变为年份.xx(例26.1)主页自新版本发布后将会替换为此编号系统" />
-                <local:MyHint Margin="0,8,0,2" IsWarn="True"
-                    Text="某些图片显示出错，正在整改" />
             <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
             Text="" />
 <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
@@ -48,7 +46,7 @@
 		        Logo="https://icon-library.com/images/minecraft-logo-icon/minecraft-logo-icon-6.jpg" Title="安慕希官网" Info="玩正版，从你我做起"
 		        EventType="打开网页" EventData="https://www.minecraft.net/" Type="Clickable" />
             <local:MyListItem  Margin="-2,0,0,0"
-		        Logo="https://www.littleskin.cn/favicon.ico" Title="Little Skin" Info="Authlib-Injector 托管！！！"
+		        Logo="https://img.imgos.cn/cdn/20260322/5e9358ab35262b5bd60c103543ba039a.png" Title="Little Skin" Info="Authlib-Injector 托管！！！"
 		        EventType="打开网页" EventData="https://littleskin.cn/" Type="Clickable" />
             <local:MyListItem  Margin="-2,0,0,0"
 		        Logo="https://files.minecraftforge.net/favicon.ico" Title="Forge" Info="Forge Mod Loader"
@@ -60,7 +58,7 @@
 		        Logo= "https://www.mcmod.cn/favicon.ico" Title="安慕希百科" Info="（MC百科）各种模组和材质包的大型汇总库！"
 		        EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" />
             <local:MyListItem  Margin="-2,0,0,0"
-		        Logo= "https://zh.minecraft.wiki/favicon.ico" Title="安慕希百科全书（Minecraft Wiki)" Info="类似于维基百科，可以自由编辑和翻阅的我的世界有关百科全书！"
+		        Logo= "https://img.imgos.cn/cdn/20260322/f69168737615b93125056c4861442cdc.png" Title="安慕希百科全书（Minecraft Wiki)" Info="类似于维基百科，可以自由编辑和翻阅的我的世界有关百科全书！"
 		        EventType="打开网页" EventData="https://zh.minecraft.wiki/" Type="Clickable" />
             <local:MyListItem  Margin="-2,0,0,0"
 		        Logo= "https://www.mtrbbs.top/favicon.ico" Title="MTRBBS" Info="我的世界铁路模组（MTR)官方论坛"
@@ -178,7 +176,7 @@
                     Text="本代码在可开源的情况下转载，不过请标注原作者" />
 
 		<local:MyHint Margin="0,8,0,2" IsWarn="False"
-                    Text="版本：V1.5" />
+                    Text="版本：V1.6" />
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
             Text="" />
         <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
